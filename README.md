@@ -1,10 +1,8 @@
-Mozilla Developer Tools Slide Deck Generator
-========================
+## Mozilla Developer Tools Slide Deck Generator
 
 This is where the code for the Mozilla Developer Tools slide deck generator lives.
 
-You don't need to clone this repo to use the generator. Only clone this repo if you want to contribute code to the project. Use these instructions to use the generator:
-
+You don't need to clone this repo to use the generator. Use Node Package Manager. See instructions below.
 ## Intended Audience
 
 Use this if:
@@ -22,7 +20,7 @@ Don't use this if:
 
 ## Usage
 
-Assuming you have [Node.js](http://nodejs.org), install `generator-mozdevtools-presentation':
+Assuming you have [Node.js](http://nodejs.org), install `generator-mozdevtools-presentation`:
 ``bash
 $ npm install -g generator-bespoke
 ``
@@ -55,32 +53,29 @@ $ grunt deploy
 To manually deploy elsewhere, compile all assets into the `public` directory:
 ``bash
 $ grunt
-```
+``
 
-Contributing Slides
-=====
+## Contributing Slides
 
 Look at [this repo](#) for an example of how your slides should be structured.
 
 Don't inline styles.
 
-Don't inline JS with the expectation it will execute. Put that stuff in a CodePen or JSFiddle.
+Provide speaker notes in the <aside> tags.
 
-Provide speaker notes in the <aside> tags or else all bets are off for people representing that feature well.
-
-Contributing Code
-=====
+## Contributing Code
 
 Fork the repo, commit your changes in your own branch, submit a pull request.
 
 Your pull request must have tests. 
 
-Origin Story
-=====
+## Origin Story
 
-This generator is based off of Mark Dalgleish's `generator-bespoke` Yeoman [generator](http://github.com/markdalgleish/generator-bespoke).
+This generator is based off of Mark Dalgleish's `generator-bespoke` Yeoman [generator](http://github.com/markdalgleish/generator-bespoke) generator.
 
-License
+## License
+
+
 =====
 
 MIT
