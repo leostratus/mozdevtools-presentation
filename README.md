@@ -3,24 +3,59 @@ Mozilla Developer Tools Slide Deck Generator
 
 This is where the code for the Mozilla Developer Tools slide deck generator lives.
 
-
-
-Usage
-=====
-
 You don't need to clone this repo to use the generator. Only clone this repo if you want to contribute code to the project. Use these instructions to use the generator:
 
-1. Make sure you have  Node.js and Node Package Manager (NPM) installed. Make sure your NPM version if >= 1.2.10. You can check your NPM version by running `npm -v` from the command line.
+## Intended Audience
 
-2. Run `npm install -g yo`
+Use this if:
 
-3. `yo mozdevtools-presentation `
+- you expect to talk about many different developer tools features in a single talk
+- you want automation (file watcher, build tasks etc.)
+- you have a working knowledge of the command line
+- you are familiar with Node.js
+- you are at least vaguely familiar with a web development workflow
 
-4. Edit index.jade and style.styl to your heart's content.
+Don't use this if:
 
-5. `grunt server` is your friend.
+- any of the items in the previous section don't make sense to you
+- you are looking for presentation materials for general Mozilla evangelism - instead [go here](http://github.com/codepo8/mozilla-presentation-templates) and clone that repo instead, because there are no general evangelism slides in here (yet?).
 
-6. Something else will go here as this evolves.
+## Usage
+
+Assuming you have [Node.js](http://nodejs.org), install `generator-mozdevtools-presentation':
+``bash
+$ npm install -g generator-bespoke
+``
+
+Make a new directory and `cd` into it:
+``bash
+$ mkdir my-presentation
+$ cd my-presentation
+``
+
+Scaffold a new presentation:
+``bash
+$ yo mozdevtools-presentation
+``
+
+## Presentation workflow
+
+All source files for the presentation reside in the `src` directory.
+
+Start a local preview server:
+``bash
+$ grunt server
+``
+
+Compile and deploy to GitHub Pages, assuming a git repo with `origin` pointing to GitHub:
+``bash
+$ grunt deploy
+``
+
+To manually deploy elsewhere, compile all assets into the `public` directory:
+``bash
+$ grunt
+```
 
 Contributing Slides
 =====
@@ -36,6 +71,16 @@ Provide speaker notes in the <aside> tags or else all bets are off for people re
 Contributing Code
 =====
 
-There should be tests.
-
 Fork the repo, commit your changes in your own branch, submit a pull request.
+
+Your pull request must have tests. 
+
+Origin Story
+=====
+
+This generator is based off of Mark Dalgleish's `generator-bespoke` Yeoman [generator](http://github.com/markdalgleish/generator-bespoke).
+
+License
+=====
+
+MIT
