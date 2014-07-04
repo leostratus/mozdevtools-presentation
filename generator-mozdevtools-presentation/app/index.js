@@ -21,7 +21,7 @@ var MozdevtoolsPresentationGenerator = yeoman.generators.Base.extend({
     var done = this.async();
 
     // Have Yeoman greet the user.
-    this.log(yosay('Welcome to the marvelous MozdevtoolsPresentation generator!'));
+    this.log(yosay('Greetings, wizard. Prepare yourself to participate in the creation of a fabulous Mozilla Developer Tools slide deck.'));
 
     var prompts = [{
       type: 'confirm',

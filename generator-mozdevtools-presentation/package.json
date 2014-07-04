@@ -1,7 +1,7 @@
 {
   "name": "generator-mozdevtools-presentation",
   "version": "0.0.0",
-  "description": "Yeoman generator",
+  "description": "Slide deck generator for Mozilla Developer Tools",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "afabbro/generator-mozdevtools-presentation",
@@ -20,7 +20,7 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "devtools-pres"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
