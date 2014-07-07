@@ -72,7 +72,7 @@ Your pull request must have tests.
 
 ## Origin Story
 
-This generator is based off of Mark Dalgleish's `generator-bespoke` Yeoman [generator](http://github.com/markdalgleish/generator-bespoke) generator.
+This generator is based off of Mark Dalgleish's  [generator-bespoke](http://github.com/markdalgleish/generator-bespoke).
 
 ## License
 
