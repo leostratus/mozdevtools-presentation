@@ -1,8 +1,9 @@
 ## Mozilla Developer Tools Slide Deck Generator
 
-This is where the code for the Mozilla Developer Tools slide deck generator lives.
+This is where the code for the Mozilla Developer Tools slide deck generator lives. _It's not finished yet_ and so it won't do very much for you.
 
 You don't need to clone this repo to use the generator. Use Node Package Manager. See instructions below.
+
 ## Intended Audience
 
 Use this if:
@@ -36,7 +37,7 @@ Scaffold a new presentation:
 $ yo mozdevtools-presentation
 ``
 
-## Presentation workflow
+## Presentation Workflow
 
 All source files for the presentation reside in the `src` directory.
 
