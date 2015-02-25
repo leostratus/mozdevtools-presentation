@@ -2,7 +2,7 @@
 
 This is where the code for the Mozilla Developer Tools slide deck generator lives. _It's not finished yet_ and so it won't do very much for you.
 
-You don't need to clone this repo to use the generator. Use Node Package Manager. See instructions below.
+You don't need to clone this repo to use the generator. Use `npm`. See instructions below.
 
 ## Intended Audience
 
